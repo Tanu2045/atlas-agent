@@ -1,225 +1,228 @@
-ATLAS: Autonomous Research Agent (MVP)
+# ATLAS: Autonomous Research Agent (MVP)
 
 ATLAS is a small autonomous research agent that can take a natural-language query, plan a research strategy, search the web, retrieve evidence, and generate a well-structured, citation-rich markdown report.
 
-It’s designed as a portfolio-ready project to showcase:
+It is designed as a portfolio-ready project to showcase:
 
-Agentic LLM workflows
+- Agentic LLM workflows
+- Retrieval-Augmented Generation (RAG)
+- Web search + scraping + document cleaning
+- Evidence-grounded answering (with optional self-critique)
+- Clean, modular Python architecture
 
-Retrieval-Augmented Generation (RAG)
 
-Web search + scraping + document cleaning
+## Features
 
-Evidence-grounded answering (with optional self-critique)
+### End-to-end pipeline in one command
 
-Clean, modular Python architecture
-
-Features
-
-End-to-end pipeline in one command
-
+```bash
 python -m src.main "your research question" --with-search
+```
 
+## Research planner
 
-Research planner
 Decomposes the user query into tasks and subquestions.
 
-Web search + RAG index
 
-Uses web search to fetch relevant pages.
+## Web search + RAG index
 
-Cleans HTML into plain text files under data/cleaned/.
+- Uses web search to fetch relevant pages.
+- Cleans HTML into plain text files under `data/cleaned/`.
+- Builds a lightweight local retrieval index over cleaned pages.
 
-Builds a lightweight local retrieval index over cleaned pages.
 
-Evidence-based answering
+## Evidence-based answering
 
-For each subquestion, retrieves top-N chunks from the index.
+- Retrieves top-N chunks from the index.
+- Answers using only that evidence.
+- (Optional) Runs a critic model to check for hallucinations.
 
-Asks the LLM to answer using only that evidence.
 
-(Optional) Runs a critic model to check for hallucinations.
-
-Final report composer
+## Final report composer
 
 Writes a full markdown research report with:
 
-Title, Abstract, Introduction
+- Title, Abstract, Introduction
+- Findings with subsections
+- Risks / Limitations
+- Conclusion
+- References (URLs)
 
-Findings with subsections
 
-Risks / Limitations
+## CLI options
 
-Conclusion
+```
+--with-search    Enable live web search + scraping
+--max-results    Limit web search result count per subquestion
+--quiet          Reduce console logging
+--no-critic      Disable the critic pass
+```
 
-References (URLs)
 
-CLI options
+## Saved outputs
 
---with-search – enable live web search + scraping.
+- Final reports saved as markdown under `reports_output/`
+- Cleaned page texts under `data/cleaned/`
 
---max-results – limit web search result count per subquestion.
 
---quiet – reduce console logging.
+## Architecture
 
---no-critic – disable the critic pass (faster / cheaper).
+### High-level components
 
-Saved outputs
+**GroqLLMClient**  
+Thin wrapper around the Groq `/chat/completions` API.
 
-Final reports saved as markdown under reports_output/.
+### Agents (`src/agents/`)
 
-Cleaned page texts under data/cleaned/.
+- `planner.py` – turns the user query into a research plan  
+- `searcher.py` – runs web search and collects raw pages  
+- `retriever.py` – builds/queries the local RAG index  
+- `answerer.py` – answers each subquestion using top-K chunks  
+- `critic.py` – optional faithfulness check  
+- `report_composer.py` – composes the final markdown report  
 
-Architecture
+### Entry point
 
-High-level components:
+- `src/main.py` – CLI orchestration for the entire pipeline  
 
-GroqLLMClient
-Thin wrapper around the Groq /chat/completions API.
 
-Agents (src/agents/):
+## Requirements
 
-planner.py – turns the user query into a structured research plan.
+- Python 3.10+ (3.11 recommended)
+- A Groq API key
+- Git
 
-searcher.py – runs web search and collects raw pages.
 
-retriever.py – builds/queries the local RAG index over cleaned pages.
+## Setup
 
-answerer.py – answers each subquestion using top-K evidence chunks.
+### Clone the repo
 
-critic.py (optional) – checks answers for faithfulness to evidence.
-
-reporter.py / report_composer.py – composes the final markdown report.
-
-Entry point
-
-src/main.py – CLI, orchestration of the full pipeline.
-
-Requirements
-
-Python 3.10+ (3.11+ recommended)
-
-A Groq API key (free tier is enough for small tests)
-
-Git (for version control)
-
-Setup
-
-Clone the repo
-
+```bash
 git clone https://github.com/<your-username>/atlas-agent.git
 cd atlas-agent
+```
 
+### Create and activate a virtual environment
 
-Create and activate a virtual environment
-
+```bash
 python -m venv .venv
+```
 
-
-On Windows (PowerShell):
-
+**Windows (PowerShell):**
+```powershell
 .venv\Scripts\Activate.ps1
+```
 
-
-On macOS/Linux:
-
+**macOS/Linux:**
+```bash
 source .venv/bin/activate
+```
 
+### Install dependencies
 
-Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
 
-Environment variables
+## Environment variables
 
-Create a file named .env in the project root:
+Create a `.env` file in the project root:
 
+```
 GROQ_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
 
+Optional:
 
-(Make sure .env is in .gitignore so it never gets committed.)
-
-Optionally you can also set:
-
+```
 GROQ_MODEL=llama3-70b-8192
+```
 
-Usage
+Make sure `.env` is in `.gitignore`.
 
-Basic command:
 
+## Usage
+
+### Basic command
+
+```bash
 python -m src.main "impact of generative AI on entry-level software engineering roles in India"
+```
 
+### With web search enabled
 
-With web search enabled:
+```bash
+python -m src.main "impact..." --with-search
+```
 
-python -m src.main "impact of generative AI on entry-level software engineering roles in India" --with-search
+### Limit web results per subquestion
 
+```bash
+python -m src.main "impact..." --with-search --max-results 2
+```
 
-Limit web results per subquestion (faster / cheaper):
+### Run quietly
 
-python -m src.main "impact of generative AI on entry-level software engineering roles in India" --with-search --max-results 2
+```bash
+python -m src.main "impact..." --with-search --quiet
+```
 
+### Disable critic
 
-Run quietly (minimal logs):
+```bash
+python -m src.main "impact..." --with-search --no-critic
+```
 
-python -m src.main "impact of generative AI on entry-level software engineering roles in India" --with-search --max-results 2 --quiet
+### Multi-word query without quotes
 
-
-Disable the critic (no faithfulness check, faster):
-
-python -m src.main "impact of generative AI on entry-level software engineering roles in India" --with-search --max-results 2 --no-critic
-
-
-You can also pass a multi-word query without quotes:
-
+```bash
 python -m src.main impact of generative AI on entry-level software engineering roles in India --with-search
+```
 
 
-(But using quotes is safer.)
+## Outputs
 
-Outputs
+### Final reports
 
-After a successful run you’ll get:
-
-A markdown report under:
-
+```
 reports_output/
-  <slug-of-query>-<timestamp>.md
+  <slug>-<timestamp>.md
+```
 
+### Cleaned text files
 
-This is ready to read, share, or convert to PDF.
-
-Cleaned text data under:
-
+```
 data/cleaned/
   <hash1>.txt
   <hash2>.txt
-  ...
+```
+
+Each corresponds to a cleaned webpage.
 
 
-Each file corresponds to a cleaned web page used as evidence.
+## Running Without Web Search
 
-Running Without Web Search
+If `data/cleaned/` contains cleaned text files:
 
-If you already have cleaned text files in data/cleaned/, you can run ATLAS in offline RAG-only mode:
-
+```bash
 python -m src.main "your research question"
+```
+
+ATLAS will:
+
+- Skip live web search
+- Build a retrieval index from the local files
+- Answer based only on local evidence
 
 
-In this mode, ATLAS:
+## Project Structure (simplified)
 
-Skips live web search.
-
-Builds a retrieval index from whatever is in data/cleaned/.
-
-Answers based only on that local corpus.
-
-Project Structure (simplified)
+```
 atlas-agent/
 ├─ data/
-│  └─ cleaned/              # cleaned text chunks from web pages
-├─ reports_output/          # final markdown reports
+│  └─ cleaned/
+├─ reports_output/
 ├─ src/
 │  ├─ agents/
 │  │  ├─ planner.py
@@ -228,35 +231,27 @@ atlas-agent/
 │  │  ├─ answerer.py
 │  │  ├─ critic.py
 │  │  └─ report_composer.py
-│  ├─ llm_client.py         # Groq client wrapper
-│  └─ main.py               # CLI entry point, pipeline orchestration
+│  ├─ llm_client.py
+│  └─ main.py
 ├─ .gitignore
 ├─ requirements.txt
 └─ README.md
+```
 
+## Design Notes
 
-Design Notes
+### LLM client is centralized
 
-LLM client is centralized
+All model calls go through `GroqLLMClient`, making it easy to:
 
-All model calls go through GroqLLMClient, making it easy to:
+- Swap models  
+- Modify parameters  
+- Add logging or telemetry  
 
-Swap models.
+### Critic is optional
 
-Change temperature / max tokens.
+It can be toggled at runtime depending on whether answer verification is needed.
 
-Add logging / telemetry.
+### Aggressive truncation
 
-Critic is optional
-
-By default, you can choose at CLI time whether to:
-
-Run a second LLM pass that critiques each answer against the evidence.
-
-Or skip it to save latency and tokens.
-
-Aggressive truncation
-
-The report composer and answerer truncate long context to avoid 413 / context-length issues.
-
-For large research plans, only top-N subanswers are included in the final prompt to the reporter.
+The composer and answerer truncate long content to avoid context-length issues.
