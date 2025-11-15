@@ -1,1 +1,13 @@
-.env 
+# Local data and outputs (do not track)
+data/
+reports_output/
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local secrets
+.env

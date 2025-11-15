@@ -1,9 +1,0 @@
-EY refers to the global organization, and may refer to one or more, of the member firms of Ernst & Young Global Limited, each of which is a separate legal entity. Ernst & Young Global Limited, a UK company limited by guarantee, does not provide services to clients.
-How EY can help
--
-Our Consulting approach to the adoption of AI and intelligent automation is human-centered, pragmatic, outcomes-focused and ethical.
-Read more
-This podcast series aims to explore the fascinating world of Generative AI unplugged, its applications, and its impact on various industries.
-This allowed us to analyze productivity gains at job role, functional and organizational levels. Our analysis reveals that 24% of tasks can be fully automated, while time spent on another 42% can be significantly reduced, freeing up 8-10 hours per week for corporate workers. This translates to a productivity boost of 2.61% by 2030—equivalent to six years of growth—significantly affecting India’s 38 million employees.
-The largest productivity gains from GenAI are expected in the services sector due to its higher labor share in gross output, while manufacturing and construction will see smaller impacts. However, even in these sectors, AI can drive efficiencies through better capital deployment and resource utilization, ultimately lowering labour expenses and improving overall cost efficiency.
-Realizing this potential requires reimagining processes, redefining workflows and reskilling the workforce. The successful adoption of GenAI requires clear strategies, piloting use cases, and scaling solutions, alongside reimagining processes, redefining KPIs, and targeted reskilling. Large-scale upskilling initiatives, supported by public-private partnerships and AI-focused training programs, are crucial to bridging the skill gap. With investments in skills, data and infrastructure, GenAI can drive economic productivity and ensure a future-ready workforce for India.
