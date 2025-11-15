@@ -1,0 +1,21 @@
+# Core / orchestration
+langchain
+langgraph
+
+# HTTP / config
+requests
+python-dotenv
+
+# Search & scraping
+ddgs
+beautifulsoup4
+trafilatura
+pypdf
+
+# RAG
+sentence-transformers
+faiss-cpu
+
+# CLI & dev
+rich
+pytest

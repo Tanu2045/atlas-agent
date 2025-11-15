@@ -1,0 +1,142 @@
+AI/ML Model Testing & Automation with Generative AI for QA Engineers
+(AI & ML Testing, Data validation, Model evaluation, Bias & Fairness checks, ML pipelines, API & CI/CD testing, Model monitoring, Continuous testing, Generative AI for QA.)
+Step into the future of QA with AI and ML testing skills that set you apart. Learn to validate data, evaluate models, and ensure fairness, accuracy, and reliability in AI systems. Master end-to-end AI pipelines, API testing, and CI/CD integration for real-world applications. Monitor models in production, detect drift, and automate retraining effortlessly. Harness Generative AI to quickly create test plans, test cases, and test data. Gain the expertise to deliver robust, explainable, and high-quality AI-powered solutions that make an impact.
+About the Instructor:
+AI/ML Model Testing & Automation with Generative AI for QA Engineers -Day 1 Video
+Live Sessions Price:
+For LIVE sessions – Offer price after discount is 300 USD 259 119 USD Or USD13000 INR 12900 INR 9900 Rupees
+OR
+Free Day 2 On:
+7th November @ 9:30 PM – 10:30 PM (IST) (Indian Timings)/
+7th November @ 11 AM – 12 PM (EST) (U.S Timings)/
+7th November @ 4:00 PM – 5:00 PM (BST) (UK Timings)
+Class Schedule:
+For Participants in India: Monday to Friday @ 9:30 PM – 10:30 PM (IST)
+For Participants in the US: Monday to Friday @ 11:00 AM – 12:00 PM (EST)
+For Participants in the UK: Monday to Friday @ 4:00 PM – 5:00 PM (BST)
+What students have to say about Nesara:
+Salient Features:
+- 30 Hours of Live Training along with recorded videos
+- Lifetime access to the recorded videos
+- Course Completion Certificate
+Who can enroll for this course?
+This course is designed for professionals and learners who want to upskill in the fast-growing field of AI and ML Testing.
+- Software Testers / QA Engineers – looking to expand their expertise into AI and ML testing.
+- Automation Test Engineers – who want to integrate AI and Generative AI tools into their testing workflows.
+- Developers / SDETs – interested in understanding how to validate and monitor AI/ML models.
+- Performance Testers & DevOps Engineers – aiming to explore MLOps, model monitoring, and CI/CD integration.
+- Tech Enthusiasts / Students – curious about how testing evolves in the age of AI and Generative AI.
+- Project Managers & Leads – who wish to understand AI testing challenges and ensure AI quality in delivery.
+What will I learn by the end of this course?
+By the end of this course, you will gain the skills and confidence to test and validate AI and ML systems effectively. You’ll learn how to:
+- Understand the fundamentals of AI, ML, and Deep Learning and their testing challenges.
+- Perform data validation, detect bias, and ensure data quality for model training.
+- Evaluate model performance using metrics like accuracy, precision, and recall.
+- Test AI pipelines, APIs, and automate workflows using CI/CD and MLOps tools.
+- Monitor model drift and data drift, and implement continuous testing in production.
+- Use Generative AI tools to create test plans, test cases, and test data automatically.
+- Ensure fairness, transparency, and explainability in AI models for responsible AI testing.
+By completing this course, you’ll be ready to take on real-world AI testing projects and become a future-ready QA professional in the AI era.
+Course syllabus:
+📅 Week 1: Foundations of AI & ML Testing
+Goal: Build a strong foundation in AI, ML, and their testing requirements.
+Topics:
+- What is AI, ML, DL – brief overview
+- Definition and differences between Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL)
+- Real-world applications of AI, ML, and DL in software and products
+- Differences between Software Testing & AI Testing
+- Deterministic vs non-deterministic outputs
+- Test data dependency vs rule-based testing
+- Continuous learning in models vs static code testing
+- Types of AI models
+- Classification: Predicting categories (e.g., spam vs non-spam emails)
+- Regression: Predicting continuous values (e.g., house prices)
+- NLP (Natural Language Processing): Text-based AI models (e.g., chatbots, sentiment analysis)
+- CV (Computer Vision): Image/video-based models (e.g., object detection)
+- AI lifecycle: Data → Model → Deployment → Monitoring
+- Overview of each stage in the AI/ML lifecycle
+- How testing fits at each stage
+- Testing challenges in AI/ML
+- Non-deterministic outputs: Same input may give slightly different results
+- Data drift: Changes in input data over time affecting model performance
+- Lack of labeled data for testing
+- Key quality attributes in AI models
+- Responsible AI: Ethical, unbiased, transparent AI models
+- Accuracy: Correctness of predictions
+- Fairness: Equal performance across demographics
+- Robustness: Model reliability under different conditions
+- Explainability: Understanding model predictions
+Hands-on:
+- Run a simple ML model using Azure ML Pipeline
+- Configure and run basic AI services from Azure:
+- Q&A Maker: Build question-answering bots
+- Computer Vision API: Image recognition and analysis
+📅 Week 2: Testing the Data & Model
+Goal: Focus on validating the quality of data and the AI/ML models.
+Topics:
+- Data validation & quality checks
+- Identify missing values, duplicates, and inconsistencies in datasets
+- Detect bias in datasets (imbalanced classes, skewed distributions)
+- Tools: Great Expectations, TensorFlow Data Validation for automated checks
+- Model validation
+- Evaluate model performance using metrics: Accuracy, Precision, Recall, F1 Score, ROC Curve
+- Techniques to prevent overfitting, such as cross-validation
+- Bias, fairness & explainability testing
+- Test if models are fair across different user groups
+- Evaluate explainability of predictions using tools or techniques
+- Regression testing for models
+- Ensure new model versions do not degrade performance
+- Track model behavior over time
+Hands-on:
+- Create data validation rules using Great Expectations
+- Train a classification model, test its performance with metrics like precision, recall, F1 score
+- Detect and analyze bias and fairness in the trained model
+📅 Week 3: Testing AI Pipelines & Integrations
+Goal: Learn to test AI pipelines and integrations in production-like environments.
+Topics:
+- Testing AI pipelines (training → validation → deployment)
+- Validate each step of ML pipelines for errors or inconsistencies
+- Ensure reproducibility of model results
+- MLflow & model versioning
+- Track experiments, manage model versions, and compare performance
+- API testing for ML models (REST/GraphQL)
+- Validate endpoints serving the AI models
+- Test inputs, outputs, error handling, and latency
+- Testing MLOps pipelines with Jenkins/GitHub Actions
+- Automate CI/CD pipelines for ML workflows
+- Include model training, testing, and deployment in automation
+- Test automation frameworks for ML systems
+- Use Python or other frameworks for automated validation
+- Integrate unit tests, API tests, and data validation
+- Non-functional testing: Performance, latency, scalability
+- Ensure AI models respond quickly and can handle load
+Hands-on:
+- Build and test a simple ML pipeline using MLflow
+- Expose a trained model as a REST API using FastAPI
+- Integrate model tests into a Jenkins pipeline for automated testing
+📅 Week 4: AI Model Monitoring & Continuous Testing
+Goal: Learn continuous testing, monitoring, and maintenance of AI models in production.
+Topics:
+- Monitoring model drift & data drift
+- Detect changes in model performance over time
+- Track shifts in input data patterns affecting predictions
+- A/B testing for ML models
+- Compare multiple models in production to select the best performer
+- Using Prometheus + Grafana for ML metrics
+- Monitor model metrics like accuracy, response time, and error rates
+- Visualize trends in dashboards
+- Continuous Testing in MLOps lifecycle
+- Automate testing and monitoring for continuous AI deployment
+- Implement alerts and retraining triggers
+Hands-on:
+- Simulate model drift and configure alerts using Prometheus
+- Create automated retraining triggers in CI/CD pipelines
+- Review Grafana dashboards to monitor model accuracy and performance over time
+Gen AI for QA Engineer
+Goal: Leverage Generative AI to enhance testing productivity.
+Topics & Hands-on:
+- Learn Generative AI & AI Agents in Software Testing
+- Generate Test Plans, Test Cases, and Test Data using AI tools
+- Perform Functional Testing using ChatGPT
+- Explore how to integrate ChatGPT in Software Testing and Automation
+- Use AI to speed up testing workflows, reduce manual effort, and improve coverage

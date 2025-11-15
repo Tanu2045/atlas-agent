@@ -1,0 +1,30 @@
+When any major new technology grabs the headlines, talk quickly turns to jobs. And so it is with generative AI. How will generative AI affect jobs? What’s the potential scale of job displacement? I’ve written extensively on this subject, but what I’d really like to emphasize in this article is the potential for generative AI to create entirely new jobs.
+Rather than replace human workers, generative AI is going to create a new need for skilled workers – professionals with the ability to manage and get the best out of generative AI. What might those jobs look like? Here’s a list of emerging roles related to generative AI.
+AI Prompt Engineer
+Prompt engineers are experts at getting generative AI applications like ChatGPT to deliver a specific output. (For example, a generic prompt will elicit a generic response, so a prompt engineer will refine their prompts until they get the desired result.) As such, rather than being experts in programming, prompt engineers need strong communication skills, attention to detail, critical thinking, and data skills (in terms of working out what info the AI needs).
+Generative Design Specialist
+A bit like a prompt engineer but focusing on design outputs, this role will become increasingly popular across fields like architecture, product design, and engineering. In a nutshell, because generative AI can be used to create almost limitless design variations, experts will be needed to guide the AI and interpret its outputs to achieve optimal designs.
+AI Input And Output Manager
+Think of this role as the next level up from a prompt engineer – a more strategic role that oversees the information being uploaded to generative AI systems and the outputs that AI systems deliver. This will become increasingly important as companies grapple with considerations around data privacy, copyright, AI explainability, and AI bias.
+Best High-Yield Savings Accounts Of 2024
+Best 5% Interest Savings Accounts of 2024
+AI Content Reviewer/Content Auditor
+Across all forms of content – such as written articles, visual designs, and analysis reports – human reviewers will be needed to assess the quality, accuracy, and appropriateness of content. So, while we will undoubtedly see generative AI being used to create more and more content, we still need humans to ensure that content is fit for purpose.
+AI Trainer
+These are professionals who specialize in “teaching” and refining AI models. Their tasks can range from feeding the AI data, to fine-tuning its outputs to ensure accuracy and relevance.
+AI Maintenance Engineer
+Like any system, AI models require upkeep in terms of updating models, ensuring systems run efficiently, and troubleshooting issues. Generative AI is no different.
+AI Security Specialist
+The cybersecurity landscape is becoming a whole lot more complicated thanks to AI, with the technology enabling more sophisticated phishing attacks, malware, and more. Organizations will therefore need experts who can defend systems against the malicious use of AI – and potentially harness AI to mitigate threats.
+AI Instructor/AI Literacy Educator
+Just as computer literacy became a fundamental skill in the late 20th and early 21st centuries, AI literacy will become crucial going forward. Instructors who can teach individuals about AI’s workings, benefits, and challenges are emerging.
+AI Ethicist/AI Ethics Officer
+Given the powerful capabilities of GenAI, there’s a clear need for professionals who can ensure that these systems are developed and used ethically, without biases, and in ways that are socially responsible. So, part of an AI ethicist’s remit will be to create and implement guidelines that govern an organization’s ethical, safe use of AI systems.
+AI Compliance Manager/AI Compliance Officer
+If an ethicist’s role is about shaping the ethical use of AI, the compliance manager’s role is to ensure those guidelines are properly followed. Plus, as regulation and scrutiny around AI increases, organizations will need dedicated compliance professionals to ensure the business is acting within legal frameworks.
+AI Personality Designer
+As more and more generative AI tools emerge, it makes sense that these tools will need their own unique “personalities” to differentiate them from the competition. As such, we could see a new role emerge dedicated to creating engaging, likable personalities for generative AI entities. This will make interactions with generative AI tools feel more human-like.
+Custom AI Solution Developer
+While many AI applications might be broad, there’s a growing market for custom, niche AI solutions tailored to specific industry needs or challenges. Indeed, this is already happening, with many organizations partnering with AI companies to create their own bespoke, internal models built on publicly available models.
+The Final Takeaway
+As generative AI continues to evolve, new job roles will emerge that center around guiding, refining, and interpreting AI – not to mention integrating its capabilities into various sectors. That’s not to downplay the fact that many jobs will be altered or made obsolete by generative AI. But rather than focusing on generative AI solely as a job disruptor, we should also recognize it as a job creator.

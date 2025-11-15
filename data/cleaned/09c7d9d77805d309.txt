@@ -1,0 +1,12 @@
+IBM report reveals that enterprise-scale organisations in India actively and extensively use AI in their businesses while many are exploring the opportunity to introduce it.
+International Business Machines Corporation (IBM) released a report on Thursday, February 15. The report disclosed that early adapters are the ones that continue to work with AI and are leading the way. It was observed that companies are deploying AI to reduce costs, automate processes and to increase the amount of AI embedded into standard off the shelf business applications.
+Companies are tapping AI potential by using it to address labour shortages, reduce manual or repetitive tasks, automate customer self-service answers and actions, and to improve recruitment process.
+-The report stated that among all the enterprise-scale organisations- employing over 1,000 employees surveyed in India, around 59% actively deployed AI in their businesses.
+-Around 27% of IT professionals at large organisations are actively exploring the use of AI technology.
+-Almost 74% of early adapting Indian enterprises have increased their investments in AI in the past 2 years in areas like Research and Development and workforce reskilling and more.
+-It was found that 67% of IT professionals deploy AI to undertake Research and Development, 55% use AI to undertake reskilling and workforce development, and 53% use AI to build proprietary AI solutions.
+-As per the report, almost 60% that is 6 among every 10 IT professionals at enterprises informed that their company is actively implementing generative AI.
+-Around 34% of enterprises are exploring ways to implement generative AI in their business.
+Here are top 5 barriers hindering successful AI adoption:
+Managing Director at IBM India and South Asia, Sandip Patel said, “The increase in AI adoption and investments by Indian enterprises is a good indicator that they are already experiencing the benefits from AI. However, there is still a significant opportunity to accelerate as many businesses are hesitant to move beyond experimentation and deploy AI at scale.”
+Catch all the Business News, Market News, Breaking News Events and Latest News Updates on Live Mint. Download The Mint News App to get Daily Market Updates.
