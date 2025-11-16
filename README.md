@@ -1,6 +1,6 @@
 # ATLAS: Autonomous Research Agent (MVP)
 
-ATLAS is a small autonomous research agent that can take a natural-language query, plan a research strategy, search the web, retrieve evidence, and generate a well-structured, citation-rich markdown report.
+ATLAS is an autonomous research agent that can take a natural-language query, plan a research strategy, search the web, retrieve evidence, and generate a well-structured, citation-rich markdown report.
 
 It is designed as a portfolio-ready project to showcase:
 
